@@ -53,8 +53,6 @@
         "preserve_split" = true;
       };
 
-      master = { "new_is_master" = true; };
-
       misc = {
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
