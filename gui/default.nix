@@ -21,18 +21,16 @@
   # For screenshot only
   home.packages = with pkgs; [
     # Hyprland screenshot hotkey
-    # --------------------------
     wl-clipboard
     grim
     slurp
     # App navigation
-    # --------------
     wofi
+    # Wallpapers
+    swww
     # Filesystem navigation
-    # ---------------------
     dolphin
     # Desktop programs
-    # ----------------
     alacritty
     osu-lazer
     pipewire
