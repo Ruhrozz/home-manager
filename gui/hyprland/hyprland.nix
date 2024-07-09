@@ -75,6 +75,7 @@
         "$mod, Return, exec, alacritty"
         "$mod, R, exec, wofi --show drun"
         "$mod, B, exec, google-chrome-stable"
+        "$mod, D, exec, nautilus"
         '', Print, exec, grim -l 0 -g "$(slurp)" - | wl-copy''
 
         # Programs

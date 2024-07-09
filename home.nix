@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./gui ];
+  imports = [ ./gui ./shell ];
 
   home = {
     username = "ruhrozz";
@@ -60,12 +60,5 @@
     userName = "Ruhrozz";
     userEmail = "ruhrozz@bk.ru";
   };
-
-  # Shell
-  #programs.zsh = {
-  #  enable = true;
-  #  autosuggestion.enable = true;
-  #  enableCompletion = true;
-  #};
 
 }

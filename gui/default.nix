@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 
 {
-  imports = [ ./hyprland ./waybar ];
+  imports = [ ./hyprland ./waybar ./wofi ./shell ];
 
   wayland.windowManager.hyprland.enable = true;
 
@@ -15,31 +15,25 @@
       "yandex-browser-stable"
     ];
 
-  nixpkgs.config.permittedInsecurePackages =
-    [ "yandex-browser-stable-24.4.1.951-1" ];
-
   # For screenshot only
   home.packages = with pkgs; [
     # Hyprland screenshot hotkey
     wl-clipboard
     grim
     slurp
-    # App navigation
-    wofi
     # Wallpapers
     swww
     # Filesystem navigation
-    dolphin
+    gnome.nautilus
     # Desktop programs
-    alacritty
     osu-lazer
     pipewire
     pavucontrol
     telegram-desktop
     obsidian
     google-chrome
+    firefox
     opentabletdriver
     yandex-disk
-    yandex-browser
   ];
 }
