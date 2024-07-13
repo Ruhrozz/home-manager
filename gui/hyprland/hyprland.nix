@@ -56,7 +56,7 @@
       misc = {
         force_default_wallpaper = 0;
         disable_hyprland_logo = true;
-        focus_on_activate = true;
+        focus_on_activate = false;
         disable_autoreload = false;
         no_direct_scanout = true;
       };
