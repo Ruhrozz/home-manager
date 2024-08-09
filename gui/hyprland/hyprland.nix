@@ -15,6 +15,8 @@
         "col.active_border" = "rgba(89b4faee)";
       };
 
+      monitor = [ "Unknown-0,disable" "Unknown-1,disable" ];
+
       decoration = {
         rounding = 3;
         active_opacity = 1;
@@ -31,7 +33,7 @@
       };
 
       exec-once = [
-        "swww init & sleep 0.5 && exec sww img ~/Yandex.Disk/Wallpapers Full HD/6.png"
+        "swww init & sleep 0.5 && exec swww img ~/Yandex.Disk/Wallpapers Full HD/6.png"
       ];
 
       animations = {
@@ -74,15 +76,16 @@
         # General
         "$mod, Return, exec, alacritty"
         "$mod, R, exec, wofi --show drun"
-        "$mod, B, exec, google-chrome-stable"
+        "$mod, B, exec, firefox"
         "$mod, D, exec, nautilus"
+        "$mod ALT, S, exec, shutdown now"
         '', Print, exec, grim -l 0 -g "$(slurp)" - | wl-copy''
 
         # Programs
         "$mod CTRL, T, exec, telegram-desktop"
         "$mod CTRL, V, exec, pavucontrol"
         "$mod CTRL, O, exec, osu!"
-        "$mod CTRL, S, exec, steam"
+        "$mod CTRL, S, exec, __NV_PRIME_RENDER_OFFLOAD=1 __NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only steam"
         "$mod CTRL, N, exec, obsidian"
 
         # Window
