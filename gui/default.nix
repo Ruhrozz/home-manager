@@ -5,6 +5,17 @@
 
   wayland.windowManager.hyprland.enable = true;
 
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    config = {
+      common.default = [ "gtk" ];
+      hyprland.default = [ "gtk" "hyprland" ];
+    };
+
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
       "osu-lazer"
@@ -17,6 +28,7 @@
 
   # For screenshot only
   home.packages = with pkgs; [
+    xdg-desktop-portal-hyprland
     # Hyprland screenshot hotkey
     wl-clipboard
     grim
