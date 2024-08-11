@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  programs.thefuck.enable = true;
+  programs.thefuck.enableBashIntegration = false;
+
   programs.zsh = {
     enable = true;
     enableCompletion = false;
@@ -12,6 +15,8 @@
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
+      hms = "home-manager switch --flake ~/nix/home-manager/";
+      fuck = "THEFUCK_EXCLUDE_RULES=fix_file fuck";
     };
 
     history = {
@@ -34,7 +39,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [ "git" "thefuck" ];
       theme = "robbyrussell";
     };
 
