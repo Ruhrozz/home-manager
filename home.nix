@@ -10,6 +10,7 @@
     packages = with pkgs; [
       # Packages
       killall
+      micromamba
       (nerdfonts.override { fonts = [ "Hack" ]; })
     ];
 
@@ -57,8 +58,12 @@
   # GitHub options
   programs.git = {
     enable = true;
+    lfs.enable = true;
+
     userName = "Ruhrozz";
     userEmail = "ruhrozz@bk.ru";
+
+    diff-so-fancy.enable = true;
   };
 
 }
