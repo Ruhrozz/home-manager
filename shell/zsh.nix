@@ -35,6 +35,12 @@
 
       # pip
       plg = "pip list | grep";
+
+      # linux
+      C0 = "CUDA_VISIBLE_DEVICES=0";
+      C1 = "CUDA_VISIBLE_DEVICES=1";
+      C2 = "CUDA_VISIBLE_DEVICES=2";
+      C3 = "CUDA_VISIBLE_DEVICES=3";
     };
 
     history = {
