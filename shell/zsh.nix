@@ -28,6 +28,13 @@
       mm = "micromamba";
       mma = "micromamba activate";
       mmd = "micromamba deactivate";
+
+      # tmux
+      ta = "tmux attach";
+      tn = "tmux new";
+
+      # pip
+      plg = "pip list | grep";
     };
 
     history = {
