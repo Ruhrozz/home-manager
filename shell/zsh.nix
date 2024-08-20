@@ -23,6 +23,7 @@
       # utils
       fuck = "THEFUCK_EXCLUDE_RULES=fix_file fuck";
       cat = "bat";
+      ls = "eza";
 
       # micromamba
       mm = "micromamba";
