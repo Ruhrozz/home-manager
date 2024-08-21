@@ -9,6 +9,8 @@
     stateVersion = "24.05";
     packages = with pkgs; [
       micromamba
+      dust
+      duf
       (nerdfonts.override { fonts = [ "Hack" ]; })
     ];
 
