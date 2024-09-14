@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./gui ./shell ];
+  imports = [ ./shell ];
 
   home = {
     username = "ruhrozz";
@@ -16,10 +16,6 @@
 
     sessionVariables = {
       EDITOR = "nvim";
-      SDL_VIDEODRIVER = "wayland";
-      CLUTTER_BACKEND = "wayland";
-      GDK_BACKEND = "wayland";
-      QT_QPA_PLATFORM = "wayland";
     };
   };
 
@@ -30,10 +26,8 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-
     userName = "Ruhrozz";
     userEmail = "ruhrozz@bk.ru";
-
     diff-so-fancy.enable = true;
   };
 }
