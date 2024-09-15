@@ -10,6 +10,8 @@
       shiftwidth = 4;
       softtabstop = 4;
       colorcolumn = "120";
+      smarttab = true;
+      smartindent = true;
       expandtab = true;
       number = true;
       mouse = "a";

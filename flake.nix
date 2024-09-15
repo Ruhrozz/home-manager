@@ -17,14 +17,21 @@
   outputs = { nixpkgs, home-manager, nixvim, ... }:
     let
       system = "x86_64-linux";
+      username = "ruhrozz";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations = {
-        ruhrozz = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.${username} =
+        home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
 
-          modules = [ ./home.nix nixvim.homeManagerModules.nixvim ];
+          modules = [
+            {
+              home.username = "${username}";
+              home.homeDirectory = "/home/${username}";
+            }
+            nixvim.homeManagerModules.nixvim
+            ./home.nix
+          ];
         };
-      };
     };
 }
