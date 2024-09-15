@@ -18,7 +18,7 @@
     sessionVariables.ZSH_DISABLE_COMPFIX = true;
 
     shellAliases = {
-      hms = "home-manager switch --flake ~/nix/home-manager/#ruhrozz";
+      hms = "home-manager switch --flake ~/nix/home-manager/";
 
       # utils
       fuck = "THEFUCK_EXCLUDE_RULES=fix_file fuck";
