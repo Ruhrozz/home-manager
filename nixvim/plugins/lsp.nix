@@ -9,16 +9,6 @@
             autostart = true;
           }; # python
 
-          ruff-lsp = {
-            enable = true;
-            autostart = true;
-          }; # still python =)
-
-          ruff = {
-            enable = true;
-            autostart = true;
-          }; # still python =)
-
           nil-ls = {
             enable = true;
             autostart = true;
@@ -90,6 +80,10 @@
           diagnostics = {
             yamllint.enable = true; # yaml
             codespell.enable = true; # english
+            pylint = {
+              enable = true;
+              package = null;
+            };
           };
           formatting = {
             black = {
