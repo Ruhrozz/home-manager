@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixvim = {
-      url = "github:ruhrozz/nixvim";
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -23,10 +23,7 @@
         ruhrozz = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
 
-          modules = [
-            ./home.nix
-            { home.packages = [ nixvim.packages.${system}.default ]; }
-          ];
+          modules = [ ./home.nix nixvim.homeManagerModules.nixvim ];
         };
       };
     };
