@@ -11,6 +11,8 @@
       micromamba
       dust
       duf
+      pre-commit
+      uv
       (nerdfonts.override { fonts = [ "Hack" ]; })
     ];
   };
