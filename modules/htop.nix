@@ -23,7 +23,7 @@
       highlight_megabytes = 1;
       highlight_threads = 1;
     } // (with config.lib.htop;
-      leftMeters [ (bar "AllCPUs2") (bar "Memory") ])
+      leftMeters [ (bar "AllCPUs4") (bar "Memory") ])
       // (with config.lib.htop;
         rightMeters [
           (text "Tasks")
