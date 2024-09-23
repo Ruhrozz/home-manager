@@ -13,6 +13,7 @@
       duf
       pre-commit
       uv
+      shellcheck # bashls nixvim plugin dependency
       (nerdfonts.override { fonts = [ "Hack" ]; })
     ];
   };
