@@ -8,5 +8,6 @@
     ./telescope.nix
     ./trouble.nix
     ./treesitter.nix
+    ./autopairs.nix
   ];
 }
