@@ -8,7 +8,6 @@
     sessionVariables.EDITOR = "nvim";
 
     packages = with pkgs; [
-      micromamba
       dust
       duf
       pre-commit
