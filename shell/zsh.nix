@@ -15,7 +15,11 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-    sessionVariables.ZSH_DISABLE_COMPFIX = true;
+    sessionVariables = {
+      ZSH_DISABLE_COMPFIX = true;
+      UV_CACHE_DIR = "$HOME/.cache/uv/";
+      UV_LINK_MODE = "symlink";
+    };
 
     shellAliases = {
       hms = "home-manager switch --flake ~/nix/home-manager/";
