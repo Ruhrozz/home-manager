@@ -9,5 +9,6 @@
     ./trouble.nix
     ./treesitter.nix
     ./autopairs.nix
+    ./comment.nix
   ];
 }
