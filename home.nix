@@ -13,6 +13,7 @@
       pre-commit
       uv
       shellcheck # bashls nixvim plugin dependency
+      ripgrep # telescope nixvim plugin dependency
       (nerdfonts.override { fonts = [ "Hack" ]; })
     ];
   };
